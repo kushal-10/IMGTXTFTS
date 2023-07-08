@@ -14,6 +14,7 @@ The [FLICKR30K](https://shannon.cs.illinois.edu/DenotationGraph/) Dataset is mod
 ### Model
 To extract visual features [CLIP](https://github.com/openai/CLIP) is used. To extract textual features [spacy](https://spacy.io/usage/linguistic-features) linguistics features are used.
 ### Usage
+There should be a data folder in the root directory containing images from the dataset
 
 1) After cloning the repository, the directory tree should look like this:
 
@@ -43,6 +44,7 @@ python3 get_features.py --visual
 ```python
 python3 get_features.py --textual
 ```
+These dataframes can be further used in a XGBOOST tree or other classifiers. LIME/SHAP can be used to do feature importance.
 
 
 
